@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="fa-solid fa-location-dot"></i> Buscador CEP</h1>
+        <div class="search-box">
+            <form class="search-box" id="form">
+            <input type="text" id="input" placeholder="Digite o CEP" required>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Buscar
+            </button>
+        </form>
+        </div>
+
+        <div class="resultado">
+
+            <div class="linha">
+                <div class="icone"><i class="fa-solid fa-road"></i></div>
+                <div>
+                    <span class="label">Rua</span>
+                    <span id="Rua" class="valor"></span>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="icone"><i class="fa-solid fa-map"></i></div>
+                <div>
+                    <span class="label">Bairro</span>
+                    <span id="Bairro" class="valor"></span>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="icone"><i class="fa-solid fa-city"></i></div>
+                <div>
+                    <span class="label">Cidade</span>
+                    <span id="Cidade" class="valor"></span>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="icone"><i class="fa-solid fa-flag"></i></div>
+                <div>
+                    <span class="label">Estado</span>
+                    <span id="Estado" class="valor"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
